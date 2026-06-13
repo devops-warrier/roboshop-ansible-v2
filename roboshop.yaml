@@ -3,6 +3,9 @@
   connection: local
   become: yes
 
+  group_vars:
+    - all.yaml
+
   vars:
     instances: ["mongodb", "redis", "mysqldb", "rabitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
     image_id: ami-0220d79f3f480ecf5
