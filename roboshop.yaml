@@ -1,13 +1,13 @@
 - name: provisioning the infrastructure
-  hosts: all
+  hosts: local
   connection: local
   become: yes
-
   vars:
     instances: ["mongodb", "redis", "mysqldb", "rabitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
     image_id: ami-0220d79f3f480ecf5
     zone_id: Z04296232TPHCB0NK6KLW
     domain_name: lokesh23.online
+    action: create
 
   tasks:
   - name: creating the instances
