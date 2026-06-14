@@ -1,4 +1,4 @@
-  - name: app setup
+  - name: application setup
     import_role:
       name: common
       import_from: app_setup
