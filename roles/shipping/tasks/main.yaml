@@ -1,17 +1,17 @@
   - name: install maven
     import_role:
       name: common
-      import_from: maven_setup
+      tasks_from: maven_setup
 
   - name: configure the app setup
     import_role:
       name: common
-      import_from: app_setup
+      tasks_from: app_setup
 
   - name: systemd setup
     import_role:
       name: common
-      import_from: systemd_setup
+      tasks_from: systemd_setup
 
   - name: install python dependencies
     pip:
