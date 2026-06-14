@@ -1,4 +1,4 @@
-  - name : nodejs setup
+  - name : nodejs package setup
     import_role:
       name: common
       import_from: nodejs_setup
