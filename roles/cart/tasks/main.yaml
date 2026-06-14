@@ -1,12 +1,12 @@
-  - name : nodejs package setup
-    import_role:
-      name: common
-      import_from: nodejs_setup
-
   - name: app setup
     import_role:
       name: common
       import_from: app_setup
+  
+  - name : nodejs package setup
+    import_role:
+      name: common
+      import_from: nodejs_setup
 
   - name: systemd setup
     import_role:
