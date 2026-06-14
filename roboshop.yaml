@@ -9,13 +9,13 @@
 
   # execute all at a time by passing in CMD
 
-  ansible-playbook -e "component=mongodb" roboshop.yaml
-  ansible-playbook -e "component=mysql" roboshop.yaml
-  ansible-playbook -e "component=redis" roboshop.yaml
-  ansible-playbook -e "component=rabitmq" roboshop.yaml
-  ansible-playbook -e "component=catalogue" roboshop.yaml
-  ansible-playbook -e "component=cart" roboshop.yaml
-  ansible-playbook -e "component=user" roboshop.yaml
-  ansible-playbook -e "component=payment" roboshop.yaml
-  ansible-playbook -e "component=frontend" roboshop.yaml
+  # ansible-playbook -e "component=mongodb" roboshop.yaml
+  # ansible-playbook -e "component=mysql" roboshop.yaml
+  # ansible-playbook -e "component=redis" roboshop.yaml
+  # ansible-playbook -e "component=rabitmq" roboshop.yaml
+  # ansible-playbook -e "component=catalogue" roboshop.yaml
+  # ansible-playbook -e "component=cart" roboshop.yaml
+  # ansible-playbook -e "component=user" roboshop.yaml
+  # ansible-playbook -e "component=payment" roboshop.yaml
+  # ansible-playbook -e "component=frontend" roboshop.yaml
 
