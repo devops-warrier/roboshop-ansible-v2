@@ -1,17 +1,17 @@
   - name: enable and install nodejs
     import_role:
       name: common
-      import_from: nodejs_setup
+      tasks_from: nodejs_setup
 
   - name: app setup
     import_role:
       name: common
-      import_from: app_setup 
+      tasks_from: app_setup 
 
   - name: copy and deamon reload
     import_role:
       name: common
-      import_from: systemd_setup
+      tasks_from: systemd_setup
       
   - name: enable and restart user
     service:
